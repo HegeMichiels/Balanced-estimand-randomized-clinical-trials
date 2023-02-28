@@ -109,10 +109,6 @@ IPW.weights.W = function(data,prob.l,q0,q1){
   L = data$L
   Y = data$Y
   weights = exp(S*(q0+q1))/(prob.l*(exp(q0+q1)-1)+1)
-  #Truncated weights
-  #weights = ifelse(data$R==1, yes=weights,no=0)
-  #weights.tmt = na.omit(subset(weights,data$R==1))
-  #weights = pmin(pmax(weights, quantile(weights.tmt, .01)), quantile(weights.tmt, .99)) #Truncation based on quantiles of treated patients
   return(weights)
 }
 
