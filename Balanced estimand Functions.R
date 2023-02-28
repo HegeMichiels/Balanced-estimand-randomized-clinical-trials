@@ -1,4 +1,5 @@
-###This file contains all functions required to estimate the balanced estimand mu = mu_1-mu_0
+###This file contains all functions required to estimate the balanced estimand mu = mu_1-mu_0, 
+### "The treatment effect that would have been observed if all patients switch as under control treatment"
 
 ##Library ####
 library(clusterPower)
